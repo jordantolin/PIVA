@@ -30,3 +30,19 @@ p {
 .btn.btn-ghost {
   @apply shadow-none;
 }
+
+.use-client {
+  background-color: #212433; /*Colore header e footer */
+}
+
+.use-clientbotton {
+  background-color: #3498db; /* Colore di sfondo bottone */
+  color: #fff; /* Colore del testo bottone */
+  transition: background-color 0.3s, transform 0.3s; /* Transizione di colore e dimensione */
+}
+
+.use-clientbotton:hover {
+  background-color: #212433; /* Colore di sfondo al passaggio del cursore */
+  transform: scale(1.05); /* Ingrandimento del pulsante al passaggio del cursore */
+}
+
