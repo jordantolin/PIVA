@@ -30,3 +30,71 @@ p {
 .btn.btn-ghost {
   @apply shadow-none;
 }
+
+.use-client {
+  background-color: #212433; /*Colore header e footer */
+}
+
+.use-clientbotton {
+  background-color: #3498db; /* Colore di sfondo bottone */
+  color: #fff; /* Colore del testo bottone */
+  transition: background-color 0.3s, transform 0.3s; /* Transizione di colore e dimensione */
+}
+
+.use-clientbotton:hover {
+  background-color: #212433; /* Colore di sfondo al passaggio del cursore */
+  transform: scale(1.05); /* Ingrandimento del pulsante al passaggio del cursore */
+}
+
+.text-size {
+  font-size: 19px; /*font paragrafo */
+}
+
+/* ABOUT US */
+
+.about-us-container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.page-title {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #ca095d; /* Colore del testo principale */
+}
+
+.intro-text,
+.paragraph,
+.closing-text {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  color: #ede5e5; /* Colore del testo secondario */
+}
+
+.section-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #f1abab; /* Colore del testo delle sezioni */
+}
+
+.important-text {
+  font-weight: bold;
+  color: #ca095d; /* Colore del testo delle parole importanti */
+}
+
+.feature-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.feature-item {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  color: #ede5e5; /* Colore del testo delle feature */
+}
+
+/* Puoi aggiungere ulteriori stili o modificare quelli esistenti in base alle tue preferenze. */
