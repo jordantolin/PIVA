@@ -2,7 +2,7 @@
 pragma solidity >=0.8.0 <0.9.0;
 
 // Utile per il debug. Rimuovere prima del rilascio su una rete live.
-import "hardhat/console.sol";
+//import "hardhat/console.sol";
 // Interfaccia per il token ERC20
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 
@@ -34,6 +34,10 @@ contract YourContract {
 
     // Funzione per creare una nuova fattura
     function createInvoice(address seller, address buyer, uint amount) public returns (uint256){
+
+        require(seller != address(0));
+        require(buyer != address(0));
+        require(amount != 0);
 
         id += 1;
         // Creazione di una nuova fattura
