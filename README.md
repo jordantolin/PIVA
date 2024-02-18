@@ -1,80 +1,39 @@
-# 🏗 Scaffold-ETH 2
-
-<h4 align="center">
-  <a href="https://docs.scaffoldeth.io">Documentation</a> |
-  <a href="https://scaffoldeth.io">Website</a>
-</h4>
-
-🧪 An open-source, up-to-date toolkit for building decentralized applications (dapps) on the Ethereum blockchain. It's designed to make it easier for developers to create and deploy smart contracts and build user interfaces that interact with those contracts.
-
-⚙️ Built using NextJS, RainbowKit, Hardhat, Wagmi, Viem, and Typescript.
-
-- ✅ **Contract Hot Reload**: Your frontend auto-adapts to your smart contract as you edit it.
-- 🪝 **[Custom hooks](https://docs.scaffoldeth.io/hooks/)**: Collection of React hooks wrapper around [wagmi](https://wagmi.sh/) to simplify interactions with smart contracts with typescript autocompletion.
-- 🧱 [**Components**](https://docs.scaffoldeth.io/components/): Collection of common web3 components to quickly build your frontend.
-- 🔥 **Burner Wallet & Local Faucet**: Quickly test your application with a burner wallet and local faucet.
-- 🔐 **Integration with Wallet Providers**: Connect to different wallet providers and interact with the Ethereum network.
-
-![Debug Contracts tab](https://github.com/scaffold-eth/scaffold-eth-2/assets/55535804/b237af0c-5027-4849-a5c1-2e31495cccb1)
-
-## Requirements
-
-Before you begin, you need to install the following tools:
-
-- [Node (>= v18.17)](https://nodejs.org/en/download/)
-- Yarn ([v1](https://classic.yarnpkg.com/en/docs/install/) or [v2+](https://yarnpkg.com/getting-started/install))
-- [Git](https://git-scm.com/downloads)
-
-## Quickstart
-
-To get started with Scaffold-ETH 2, follow the steps below:
-
-1. Clone this repo & install dependencies
-
-```
-git clone https://github.com/scaffold-eth/scaffold-eth-2.git
-cd scaffold-eth-2
-yarn install
-```
-
-2. Run a local network in the first terminal:
-
-```
-yarn chain
-```
-
-This command starts a local Ethereum network using Hardhat. The network runs on your local machine and can be used for testing and development. You can customize the network configuration in `hardhat.config.ts`.
-
-3. On a second terminal, deploy the test contract:
-
-```
-yarn deploy
-```
-
-This command deploys a test smart contract to the local network. The contract is located in `packages/hardhat/contracts` and can be modified to suit your needs. The `yarn deploy` command uses the deploy script located in `packages/hardhat/deploy` to deploy the contract to the network. You can also customize the deploy script.
-
-4. On a third terminal, start your NextJS app:
-
-```
-yarn start
-```
-
-Visit your app on: `http://localhost:3000`. You can interact with your smart contract using the `Debug Contracts` page. You can tweak the app config in `packages/nextjs/scaffold.config.ts`.
-
-Run smart contract test with `yarn hardhat:test`
-
-- Edit your smart contract `YourContract.sol` in `packages/hardhat/contracts`
-- Edit your frontend in `packages/nextjs/pages`
-- Edit your deployment scripts in `packages/hardhat/deploy`
-
-## Documentation
-
-Visit our [docs](https://docs.scaffoldeth.io) to learn how to start building with Scaffold-ETH 2.
-
-To know more about its features, check out our [website](https://scaffoldeth.io).
-
-## Contributing to Scaffold-ETH 2
-
-We welcome contributions to Scaffold-ETH 2!
-
-Please see [CONTRIBUTING.MD](https://github.com/scaffold-eth/scaffold-eth-2/blob/main/CONTRIBUTING.md) for more information and guidelines for contributing to Scaffold-ETH 2.
+<h1> 🏗 ETH-VAT - Blockchain Invoice and Payment App 📑 </h1>
+<h2>Introduction 🚀</h2>
+<p>ETH-VAT is a decentralized application (DApp) built on the Arbitrum Sepolia blockchain using Solidity smart contracts. The purpose of this DApp is to provide a secure and transparent platform for creating invoices and processing payments using blockchain technology. The smart contract managing the core functionality is deployed on the Arbitrum Sepolia network.</p>
+<h2>Features ✨</h2>
+<ul>
+  <li><strong>Invoice Creation:</strong> Users can create invoices specifying details such as recipient, amount, due date, etc. 📄</li>
+  <li><strong>Payment Processing:</strong> Once an invoice is created, payments can be made directly through the smart contract, ensuring transparency and immutability. 💰</li>
+  <li><strong>Blockchain Security:</strong> All transactions are recorded on the Ethereum blockchain, specifically on the Arbitrum Sepolia network, providing tamper-proof audit trails. 🔒</li>
+  <li><strong>Owner Withdrawal:</strong> The contract owner can withdraw accumulated funds from the contract. 💸</li>
+</ul>
+<h2>Getting Started 🚀</h2>
+<p>To get started with using this DApp, follow these steps:</p>
+<ol>
+  <li>Clone the repository: <code>git clone -b backend https://github.com/jordantolin/PIVA</code></li>
+  <li>Install dependencies using yarn: <code>yarn install</code></li>
+  <li>Compile the smart contracts: <code>npx hardhat compile</code></li>
+  <li>Deploy the contracts to the Arbitrum Sepolia network: <code>npx hardhat run scripts/deploy.js --network arbitrumSepolia</code></li>
+  <li>Interact with the deployed contracts using a web interface or command-line tools.</li>
+</ol>
+<h2>Usage 🛠️</h2>
+<ul>
+  <li><strong>Creating Invoices:</strong> Use the <code>setGreeting</code> function in the smart contract to create a new invoice, specifying the details as parameters. 🖋️</li>
+  <li><strong>Making Payments:</strong> Send ETH along with the transaction to pay an invoice. Premium features are activated for transactions with non-zero value. 💳</li>
+  <li><strong>Withdrawing Funds:</strong> Only the contract owner can withdraw accumulated funds using the <code>withdraw</code> function. 💸</li>
+</ul>
+<h2>Contributing 🤝</h2>
+<p>Contributions to this project are welcome. To contribute:</p>
+<ol>
+  <li>Fork the repository. 🍴</li>
+  <li>Create a new branch: <code>git checkout -b feature/my-feature</code></li>
+  <li>Make your changes and commit them: <code>git commit -am 'Add new feature'</code></li>
+  <li>Push to the branch: <code>git push origin feature/my-feature</code></li>
+  <li>Submit a pull request. 🔃</li>
+</ol>
+<h2>License 📝</h2>
+<p>This project is licensed under the MIT License. See the <a href="LICENSE">LICENSE</a> file for details.</p>
+<h2>Contact 📧</h2>
+<p>For questions or support, please contact the project maintainer at <a href="mailto:email@example.com">tsetse13@duck.it</a>.</p>
+<p>Download the repository from the "Backend" branch as our modifications are there. Our goal was to create an app for invoicing on the blockchain connected to the tax agency to prevent tax evasion.</p>
